@@ -31,6 +31,17 @@ sendmsg$NFT_MSG_GETOBJ(fd sock_nl_netfilter, msg ptr[in, msghdr_nf_tables[NFT_MS
 sendmsg$NFT_MSG_GETOBJ_RESET(fd sock_nl_netfilter, msg ptr[in, msghdr_nf_tables[NFT_MSG_GETOBJ_RESET, nft_obj_policy]], f flags[send_flags])
 sendmsg$NFT_MSG_GETFLOWTABLE(fd sock_nl_netfilter, msg ptr[in, msghdr_nf_tables[NFT_MSG_GETFLOWTABLE, nft_flowtable_policy]], f flags[send_flags])
 
+sendmsg$NFT_MSG_NEWTABLE(fd sock_nl_netfilter, msg ptr[in, msghdr_nf_tables[NFT_MSG_NEWTABLE, nft_table_policy]], f flags[send_flags])
+sendmsg$NFT_MSG_NEWCHAIN(fd sock_nl_netfilter, msg ptr[in, msghdr_nf_tables[NFT_MSG_NEWCHAIN, nft_chain_policy]], f flags[send_flags])
+sendmsg$NFT_MSG_NEWRULE(fd sock_nl_netfilter, msg ptr[in, msghdr_nf_tables[NFT_MSG_NEWRULE, nft_rule_policy]], f flags[send_flags])
+sendmsg$NFT_MSG_NEWSET(fd sock_nl_netfilter, msg ptr[in, msghdr_nf_tables[NFT_MSG_NEWSET, nft_table_policy]], f flags[send_flags])
+sendmsg$NFT_MSG_NEWSETELEM(fd sock_nl_netfilter, msg ptr[in, msghdr_nf_tables[NFT_MSG_NEWSETELEM, nft_set_elem_list_policy]], f flags[send_flags])
+sendmsg$NFT_MSG_NEWGEN(fd sock_nl_netfilter, msg ptr[in, msghdr_nf_tables[NFT_MSG_NEWGEN, void]], f flags[send_flags])
+sendmsg$NFT_MSG_NEWOBJ(fd sock_nl_netfilter, msg ptr[in, msghdr_nf_tables[NFT_MSG_NEWOBJ, nft_obj_policy]], f flags[send_flags])
+# Extract Issue...
+# sendmsg$NFT_MSG_NEWOBJ_RESET(fd sock_nl_netfilter, msg ptr[in, msghdr_nf_tables[NFT_MSG_NEWOBJ_RESET, nft_obj_policy]], f flags[send_flags])
+sendmsg$NFT_MSG_NEWFLOWTABLE(fd sock_nl_netfilter, msg ptr[in, msghdr_nf_tables[NFT_MSG_NEWFLOWTABLE, nft_flowtable_policy]], f flags[send_flags])
+
 sendmsg$NFT_BATCH(fd sock_nl_netfilter, msg ptr[in, msghdr_netlink[nft_batch_msg]], f flags[send_flags])
 
 nft_batch_msg {
