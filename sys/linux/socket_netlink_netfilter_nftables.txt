@@ -535,7 +535,7 @@ nft_lookup_policy [
 	NFTA_LOOKUP_FLAGS	nlnetw[NFTA_LOOKUP_FLAGS, flags[nft_lookup_flags, int32be]]
 ] [varlen]
 
-nft_lookup_flags = NFT_LOOKUP_F_INV
+nft_lookup_flags = NFT_LOOKUP_F_INV, 0
 
 nft_payload_policy [
 	NFTA_PAYLOAD_SREG		nlnetw[NFTA_PAYLOAD_SREG, flags[nft_registers, int32be]]
