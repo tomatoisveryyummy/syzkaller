@@ -506,7 +506,7 @@ nft_dynset_policy [
 ] [varlen]
 
 nft_dynset_ops = NFT_DYNSET_OP_ADD, NFT_DYNSET_OP_UPDATE, NFT_DYNSET_OP_DELETE
-nft_dynset_flags = NFT_DYNSET_F_INV
+nft_dynset_flags = NFT_DYNSET_F_INV, 0
 
 nft_exthdr_policy [
 	NFTA_EXTHDR_DREG	nlnetw[NFTA_EXTHDR_DREG, flags[nft_registers, int32be]]
